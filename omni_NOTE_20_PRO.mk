@@ -18,3 +18,7 @@ PRODUCT_NAME := omni_NOTE_20_PRO
 PRODUCT_BRAND := CUBOT
 PRODUCT_MODEL := NOTE 20 PRO
 PRODUCT_MANUFACTURER := cubot
+
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock.recovery
+    
