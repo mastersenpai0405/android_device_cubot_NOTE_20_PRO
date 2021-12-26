@@ -1,0 +1,32 @@
+# mount point       fstype    device                                                                flags
+/cache                   ext4     /dev/block/platform/bootdevice/by-name/cache             flags=display="Cache"
+/protect_f               ext4     /dev/block/platform/bootdevice/by-name/protect1          flags=display="Protect_f"
+/protect_s               ext4     /dev/block/platform/bootdevice/by-name/protect2          flags=display="Protect_s"
+/nvdata                  ext4     /dev/block/platform/bootdevice/by-name/nvdata            flags=display="Nvdata"
+/nvcfg                   ext4     /dev/block/platform/bootdevice/by-name/nvcfg             flags=display="Nvcfg"
+/persist                 ext4     /dev/block/platform/bootdevice/by-name/persist           flags=display="Persist"
+/nvram                   emmc     /dev/block/platform/bootdevice/by-name/nvram             flags=display="Nvram"
+/recovery                emmc     /dev/block/platform/bootdevice/by-name/recovery          flags=display="Recovery";flashimg=1
+/boot                    emmc     /dev/block/platform/bootdevice/by-name/boot              flags=display="Boot";flashimg=1
+/expdb                   emmc     /dev/block/platform/bootdevice/by-name/expdb           
+/seccfg                  emmc     /dev/block/platform/bootdevice/by-name/seccfg          
+/tee1                    emmc     /dev/block/platform/bootdevice/by-name/tee1             
+/tee2                    emmc     /dev/block/platform/bootdevice/by-name/tee2             
+/scp1                    emmc     /dev/block/platform/bootdevice/by-name/scp1              
+/scp2                    emmc     /dev/block/platform/bootdevice/by-name/scp2             
+/sspm_1                  emmc     /dev/block/platform/bootdevice/by-name/sspm_1         
+/sspm_2                  emmc     /dev/block/platform/bootdevice/by-name/sspm_2          
+/md1img                  emmc     /dev/block/platform/bootdevice/by-name/md1img            
+/md1dsp                  emmc     /dev/block/platform/bootdevice/by-name/md1dsp           
+/md1arm7                 emmc     /dev/block/platform/bootdevice/by-name/md1arm7           
+/md3img                  emmc     /dev/block/platform/bootdevice/by-name/md3img           
+/gz1                     emmc     /dev/block/platform/bootdevice/by-name/gz1               
+/gz2                     emmc     /dev/block/platform/bootdevice/by-name/gz2               
+/spmfw                   emmc     /dev/block/platform/bootdevice/by-name/spmfw             
+/dtbo                    emmc     /dev/block/platform/bootdevice/by-name/dtbo             
+/otp                     emmc     /dev/block/platform/bootdevice/by-name/otp              
+/vbmeta                  emmc     /dev/block/platform/bootdevice/by-name/vbmeta        
+
+# Removable
+/external_sd		    auto	/dev/block/mmcblk1p1	/dev/block/mmcblk1		flags=display="External SDcard";storage;wipeingui;removable;backup=0
+/usb-otg            vfat     /dev/block/sda1  /dev/block/sdd                     flags=storage;wipeingui;removable
