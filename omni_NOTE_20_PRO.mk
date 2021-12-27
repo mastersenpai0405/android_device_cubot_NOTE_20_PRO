@@ -20,5 +20,5 @@ PRODUCT_MODEL := NOTE 20 PRO
 PRODUCT_MANUFACTURER := cubot
 
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock.recovery
+    android.hardware.fastboot@1.0-impl-mock
     
